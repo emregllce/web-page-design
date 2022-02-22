@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    height: 100%;
+    width: 100%;
+    font-family: 'Times New Roman', Times, serif;
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-template-rows: 1fr 1fr 5fr 1fr;
+    grid-template-areas: 
+    "header header header"
+    "main_bottom main_bottom main_bottom_mail"
+    "body body body"
+    "footer footer footer";
+    background-color: rgb(226, 218, 218);
+}
+span{
+    color: #b606b6;
+}
+.header{
+    background-color: rgb(35,34,34);
+    color: white;
+    font-size: 28px;
+    font-weight: 700;
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-bottom: 3px solid #b606b6
+}
+a{
+    font-size: 16px;
+    font-weight: 300;
+    text-decoration: none;
+    color: white;
+    padding-right: 10px;
+}
+a:hover{
+    color: rgb(182, 6, 182);
+}
+
+.main_bottom{
+    grid-area: main_bottom;
+    display: flex;
+    color: white;
+    align-items: center;
+    padding-left: 16px;
+    padding-right: 16px;
+    background-color: #353434;
+    font-size: 19px;
+    font-weight: 700;
+}
+.main_bottom_mail{
+    grid-area: main_bottom_mail;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 16px;
+    background-color: #353434
+}
+#email{
+    height: 2rem;
+}
+.subscribe{
+    height: 2rem;
+    padding: 0 10px 0 10px;
+    color: white;
+    background-color: #ffa500;
+}
+.body{
+    grid-area: body;
+}
+.body_in{
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-around;
+}
+.left_in{
+    width: 55%;
+}
+
+.left1{
+    margin-bottom: 1rem;
+    
+}
+.left2{
+    background-color: rgb(53, 52, 52);
+    color: white;
+    padding: 1.5rem 0 1.5rem 1.5rem;
+}
+.right_in{
+    width: 25%;
+    color: white;
+    background-color: rgb(53, 52, 52);
+    padding: 1.5rem;
+}
+
+
+
+
+.footer{
+    background-color:rgb(53, 52, 52) ;
+    grid-area: footer;
+    text-align: center;
+    color: white;
+    padding-top: 10px;
+}
+.img_foot{
+    margin-top: 20px;
+    width: 15%
+}
+
+a:visited{
+    color: white;
+}
+
